@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 style='text-align:center;'> Build A Blog</h1>
+
+{% for blog in blogs %}
+<h2><strong>{{ blog.title }}</strong></h2></li>
+<p> {{ blog.body }}</p>      
+{% endfor %}
+{% endblock %}
