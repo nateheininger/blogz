@@ -17,13 +17,12 @@
                   <form action="/logout" method="post" id='logout'>
                     <input type="submit" value="Log Out" />
                   </form>
-                  <a href='/'>Home</a>
                 {% else %}
-                  <a href="login">login</a> | <a href="signup">sign up</a> | <a href="/"> home </a>
+                  <a href="login">login</a> | <a href="signup">sign up</a> 
                 {% endif %}
               </div>
     <div>
-        <a href='/blog'> Main Blog Page</a> <a href='/new-post'>Add a Blog Entry</a>
+        <a href="/"> Users </a> | <a href='/blog'> Main Blog Page</a> | <a href='/new-post'>Add a Blog Entry</a>
     </div>
     
     {% with messages = get_flashed_messages(with_categories=True) %}
